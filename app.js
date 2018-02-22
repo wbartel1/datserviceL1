@@ -6,6 +6,11 @@ app.get('/', function(req, res) {
     "Output": "Hello World!"
   });
 });
+app.get('/dubya', function(req, res) {
+    res.send({
+        "Output": "Hello Dubya!! added route in app"
+    });
+});
 
 app.post('/', function(req, res) {
   res.send({
